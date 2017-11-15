@@ -3,6 +3,8 @@
 class Question {
   constructor(question) {
     this.question = question;
+    this.id = ++Question.counter;
+    console.log(this.id);
     this.save();
   }
   save() {
@@ -19,3 +21,4 @@ class Question {
 }
 
 Question._All = [];
+Question.counter = 0;
