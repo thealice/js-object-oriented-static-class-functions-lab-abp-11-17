@@ -3,6 +3,7 @@
 class Question {
   constructor(question) {
     this.question = question;
+    this.id
     this.save();
   }
   save() {
@@ -15,3 +16,6 @@ class Question {
 
 Question._All = [];
 // let question1 = new Question('What\'s your favorite food?');
+Question.prototype.askQuestion = function() {
+  return `{$this.question}`;
+}
