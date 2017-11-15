@@ -2,7 +2,7 @@
 
 class Question {
   constructor(question) {
-    const question = new Question({$this.question});
+    this.question = question;
     this.save();
   }
   save() {
