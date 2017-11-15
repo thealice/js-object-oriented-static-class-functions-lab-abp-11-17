@@ -14,4 +14,3 @@ class Question {
 }
 
 Question._All = [];
-const question1 = new Question ('What\'s your favorite food?');
