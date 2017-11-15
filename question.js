@@ -3,6 +3,7 @@
 class Question {
   constructor(question) {
     this.question = question;
+    const question1 = new Question ('What\'s your favorite food?');
     this.save();
   }
   save() {
