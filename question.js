@@ -11,10 +11,11 @@ class Question {
   static All() {
     return this._All;
   }
+  static Find(id) {
+    return this.All().filter(function(question){
+      return question.id === id;
+    })
+  }
 }
 
 Question._All = [];
-// let question1 = new Question('What\'s your favorite food?');
-// Question.prototype.askQuestion = function() {
-//   return `{$this.question}`;
-// }
