@@ -1,5 +1,3 @@
-'use strict';
-
 class Question {
   constructor(content) {
     this.content = content;
@@ -15,7 +13,7 @@ class Question {
   }
   static Find(id) {
     return this.All().filter(function(content){
-      return content.id === id;
+      return question.id === id;
     })
   }
 }
