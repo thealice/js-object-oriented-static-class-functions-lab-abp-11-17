@@ -1,8 +1,8 @@
 'use strict';
 
 class Question {
-  constructor(question) {
-    this.question = question;
+  constructor(content) {
+    this.content = content;
     this.id = ++Question.counter;
     console.log(this.id);
     this.save();
