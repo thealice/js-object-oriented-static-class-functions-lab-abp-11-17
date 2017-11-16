@@ -2,7 +2,6 @@ class Question {
   constructor(content) {
     this.content = content;
     this.id = ++Question.counter;
-    console.log(this.id);
     this.save();
   }
   save() {
