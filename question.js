@@ -13,7 +13,7 @@ class Question {
   }
   static Find(id) {
     return this.All().filter(function(content){
-      return question.id === id;
+      return content.id === id;
     })
   }
 }
